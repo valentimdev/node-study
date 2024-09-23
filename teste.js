@@ -32,4 +32,15 @@ app.get("/cadastro/:nome?",function(req,res){
         res.send("produto criado!")
     }
 })
+app.get("/cpf/",function(req,res){
+    //req->dados enviados pelo cliente
+    var cpf=req.query["cpf"];
+    //res->resposta enviada pelo servidor de volta para o cliente
+    if(cpf){
+        res.send("retorno consulta: cpf ="+cpf)}
+        else{
+            res.send("cpf nao fornecido")
+        }
+
+})
 
