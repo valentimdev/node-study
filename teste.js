@@ -8,7 +8,7 @@ app.get("/produtos",function(req,res){//rota de cadastro dos produtos
     res.send("<h1>Lista de produtos!</h1>");
 })
 
-app.listen(4000,function(erro){//cria aplicacao na porta 4000
+app.listen(3000,function(erro){//cria aplicacao na porta 4000
     if(erro){
         console.log("Erro ao iniciar.")
     }else{
